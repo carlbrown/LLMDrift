@@ -14,7 +14,7 @@ class Visualize(object):
                  colors=['#1f77b4','#ff7f0e'],
                   fontsize=25,
                   yrange=[0,1],
-                  name_map={'openaichat/gpt-4-0314':'March 2023',"openaichat/gpt-4-0613":"June 2023"},
+                  name_map={'openaichat/gpt-4-0314':'March 2023',"openaichat/gpt-4-0613":"June 2023","openaichat/gpt-4o-2024-05-13":"May 2024"},
                  no_text=False,
                  y_name=True,
                   visible_error=True,
@@ -85,7 +85,7 @@ class Visualize(object):
                  colors=['#9467bd','#1f77b4','#ff7f0e'],
                   fontsize=25,
                   yrange=[0,1],
-                  name_map={'openaichat/gpt-4-0314':'March 2023',"openaichat/gpt-4-0613":"June 2023"},
+                  name_map={'openaichat/gpt-4-0314':'March 2023',"openaichat/gpt-4-0613":"June 2023","openaichat/gpt-4o-2024-05-13":"May 2024"},
                 visible_error=True, 
                 ):
         # Select the desired data
@@ -97,7 +97,7 @@ class Visualize(object):
         e1 = [errors_bar_upper]
         e0 = [errors_bar_lower]
         errors = e1        
-        #selected_data = data.loc[['openaichat/gpt-4-0314', 'openaichat/gpt-4-0613']]
+        #selected_data = data.loc[['openaichat/gpt-4-0314', 'openaichat/gpt-4-0613', 'openaichat/gpt-4o-2024-05-13' ]]
         #print("selected_data",selected_data)
         percentage_values = [temp*100 for temp in selected_data] 
 
